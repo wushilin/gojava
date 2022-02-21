@@ -97,10 +97,13 @@ type Collection[T any] interface {
 }
 ```
 ## List
+### Instantiating
+```go
 NewLinkedList[T]()
 LinkedListOf[T](args...T)
 NewArrayList[T]()
 ArrayListOf[T](arg...T)
+```
 
 ```go
 # Lists also supports other additional methods
@@ -167,8 +170,11 @@ type Set[T comparable] interface {
 // Multiple Set() on same spot replace the previously set value, or replace another value that will be iterated later.
 // Use with care.
 ```
+### Creating
+```go
 NewHashSet[T]()
 HashSetOf[T](args...T)
+```
 
 It supports all methods above as defined by Collection.
 
@@ -245,5 +251,9 @@ type Map[K comparable, V any] interface {
 	// Return stream of KV[K,V]. It uses iterator internally
 	Stream() stream.Stream[KV[K, V]]
 }
+```
+## Instantiating
+```go
+NewHashMap[K comparable, V any]()
 ```
 
