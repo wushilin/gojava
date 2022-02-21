@@ -1,5 +1,5 @@
 # gojava
-A few useful classes in Java implemented for Go
+A few useful classes in Java implemented for Go. Include java like Map, Set, List, and stream features on them
 
 # String
 ```go
